@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "declaration": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
+    "strict": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "./declaration.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

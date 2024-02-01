@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "lib": [ //library files to be included in the compilation
+      "DOM",
+      "ESNext"
+    ],
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true, //allows default imports from the modules with no default imports.
+    "jsx": "preserve", //controls how JSX constructs are emitted 
+    "target": "esnext", //specifies the ECMAScript target version for the generated JavaScript code
+    "module": "esnext",
+    "declaration": true, //generate .d.ts file for every ts/js file
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "noEmit": true, // ts compilation will not emit the output files after compilation
+    "noImplicitAny": false, //no  variables inferred to any
+    "skipLibCheck": true, //skip type checking of delcaration files
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
+    "strict": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "./declaration.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
